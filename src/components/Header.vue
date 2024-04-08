@@ -1,6 +1,11 @@
 <script>
 import { header } from '../data/db';
+import Button from './partials/Button.vue'
   export default {
+    components:{
+      Button
+    },
+
     data(){
       return{
         header
@@ -87,9 +92,10 @@ import { header } from '../data/db';
 
             <div class="buttons-wrapper d-flex">
 
-              <button class="main-button btn btn-success text-uppercase rounded-5 border-0">
-                <a :href="header.buttons.purchase.href" >{{ header.buttons.purchase.content }}</a>
-              </button>
+              <Button
+              :link="header.buttons.purchase.href"
+              :content="header.buttons.purchase.content"
+              />
 
               <button
                 class="search-button btn text-uppercase text-green ms-4 p-2 pe-0"
