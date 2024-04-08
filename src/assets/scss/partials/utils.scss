@@ -11,9 +11,30 @@
 }
 
 .fs_09{
-  font-size: .9rem;
+  font-size: .9rem !important;
 }
 
 .fs_08{
-  font-size: .8rem;
+  font-size: .8rem !important;
+}
+
+.text-green{
+  color: $bg-green !important;
+}
+
+.main-button{
+  width: 160px;
+  height: 50px;
+  font-size: .9rem !important;
+  background: linear-gradient(to left, $bg-green, #96e060);
+  box-shadow: 10px 5px 20px 1px lighten( $text-cyan, 30%);
+  transition: all .3s;
+  a{
+    text-decoration: none !important;
+    color: $fill-white !important;
+  }
+  &:hover{
+    background: linear-gradient(to left, $fill-black, $gray-5);
+    box-shadow: 10px 5px 20px 1px lighten( $bg-black, 40%);
+  }
 }

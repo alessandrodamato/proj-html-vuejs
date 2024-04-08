@@ -52,6 +52,16 @@ const header = {
     },
   ],
 
+  buttons: {
+    purchase: {
+      content: 'purchase',
+      href: '#'
+    },
+    search: {
+      icon: '<i class="fa-solid fa-magnifying-glass"></i>'
+    }
+  }
+
 }
 
 const footer = {

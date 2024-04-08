@@ -55,7 +55,7 @@ import { header } from '../data/db';
 
             <div class="logo">
               <a :href="header.logo.href">
-                <img :src="`/public/img/${header.logo.image}`" :alt="header.logo.name" class="img-fluid">
+                <img :src="`/img/${header.logo.image}`" :alt="header.logo.name" class="img-fluid">
               </a>
             </div>
 
@@ -83,7 +83,23 @@ import { header } from '../data/db';
 
           </div>
 
-          <div class="col h-100 d-flex justify-content-end align-items-center">c</div>
+          <div class="col h-100 d-flex justify-content-end align-items-center">
+
+            <div class="buttons-wrapper d-flex">
+
+              <button class="main-button btn btn-success text-uppercase rounded-5 border-0">
+                <a :href="header.buttons.purchase.href" >{{ header.buttons.purchase.content }}</a>
+              </button>
+
+              <button
+                class="search-button btn text-uppercase text-green ms-4 p-2 pe-0"
+                v-html="header.buttons.search.icon"
+              >
+              </button>
+              
+            </div>
+
+          </div>
 
         </div>
 
@@ -122,8 +138,10 @@ import { header } from '../data/db';
           font-weight: 600;
         }
       }
+      .search-button{
+        border: none;
+      }
     }
-
   }
 
 </style>
