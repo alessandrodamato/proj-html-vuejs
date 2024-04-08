@@ -13,7 +13,7 @@ import { header } from '../data/db';
 
 <template>
 
-  <header>
+  <header class="fs_09">
 
     <div class="header-top text-white">
 
@@ -53,7 +53,7 @@ import { header } from '../data/db';
 
           <div class="col h-100 d-flex justify-content-start align-items-center">
 
-            <div class="logo debug">
+            <div class="logo">
               <a :href="header.logo.href">
                 <img :src="`/public/img/${header.logo.image}`" :alt="header.logo.name" class="img-fluid">
               </a>
@@ -61,7 +61,28 @@ import { header } from '../data/db';
 
           </div>
 
-          <div class="col h-100 d-flex justify-content-center align-items-center">b</div>
+          <div class="col h-100 d-flex justify-content-center align-items-center">
+
+            <nav class="h-100 d-flex align-items-center">
+
+              <ul class="d-flex p-0 m-0">
+
+                <li v-for="(el, index) in header.menu" :key="index" class="list-unstyled mx-3">
+                  <a
+                    :href="el.href"
+                    class="text-uppercase text-decoration-none"
+                    :class="{'active' : index === 0}"
+                  >
+                    {{ el.name }}
+                  </a>
+                </li>
+
+              </ul>
+
+            </nav>
+
+          </div>
+
           <div class="col h-100 d-flex justify-content-end align-items-center">c</div>
 
         </div>
@@ -91,6 +112,15 @@ import { header } from '../data/db';
       height: 105px;
       .logo{
         width: 200px;
+      }
+      nav ul li a{
+        color: $lg-6;
+        &:hover{
+          text-decoration: underline !important;
+        }
+        &.active{
+          font-weight: 600;
+        }
       }
     }
 
