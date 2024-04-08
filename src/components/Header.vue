@@ -22,7 +22,7 @@ import Button from './partials/Button.vue'
 
     <div class="header-top text-white">
 
-      <div class="ad_container-sm container-fluid h-100">
+      <div class="ad_container container-fluid h-100">
         
         <div class="row h-100">
 
@@ -52,7 +52,7 @@ import Button from './partials/Button.vue'
 
     <div class="header-bottom">
 
-      <div class="ad_container-sm container-fluid h-100">
+      <div class="ad_container container-fluid h-100">
         
         <div class="row row-cols-3 h-100">
 
@@ -70,12 +70,12 @@ import Button from './partials/Button.vue'
 
             <nav class="h-100 d-flex align-items-center">
 
-              <ul class="d-flex p-0 m-0">
+              <ul class="d-flex">
 
-                <li v-for="(el, index) in header.menu" :key="index" class="list-unstyled mx-3">
+                <li v-for="(el, index) in header.menu" :key="index" class="mx-3">
                   <a
                     :href="el.href"
-                    class="text-uppercase text-decoration-none"
+                    class="text-uppercase"
                     :class="{'active' : index === 0}"
                   >
                     {{ el.name }}
@@ -127,7 +127,7 @@ import Button from './partials/Button.vue'
 
     .header-top{
       height: 40px;
-      background: linear-gradient(to left, $gray-3, #3b3b3b);
+      background: $gradient-gray;
     }
 
     .header-bottom{

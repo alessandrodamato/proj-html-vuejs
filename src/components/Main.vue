@@ -9,7 +9,7 @@
 <template>
 
   <main>
-    
+
   </main>
   
 </template>
@@ -17,6 +17,8 @@
 
 
 <style lang="scss" scoped>
+
+@use '../assets/scss/partials/vars' as *;
 
   main{
     min-height: 200px;

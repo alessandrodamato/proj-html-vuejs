@@ -1,13 +1,13 @@
 @use './vars.scss' as *;
 
-.ad_container-sm{
+.ad_container{
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .debug{
   background-color: rgba($bg-green, .2);
-  border: 1px solid black;
+  border: 1px solid $fill-black;
 }
 
 .fs_09{

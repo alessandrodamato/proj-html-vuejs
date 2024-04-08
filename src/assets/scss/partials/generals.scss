@@ -1,5 +1,16 @@
 @use './vars.scss' as *;
 
 body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+ul{
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  a{
+    text-decoration: none;
+    color: $fill-black;
+  }
 }

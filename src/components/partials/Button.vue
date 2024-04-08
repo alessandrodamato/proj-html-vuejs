@@ -27,7 +27,7 @@
     width: 160px;
     height: 50px;
     font-size: .9rem !important;
-    background: linear-gradient(to left, $bg-green, #96e060);
+    background: $gradient-green-toleft;
     box-shadow: 10px 5px 20px 1px lighten( $text-cyan, 30%);
     transition: all .3s;
     a{
@@ -35,7 +35,7 @@
       color: $fill-white !important;
     }
     &:hover{
-      background: linear-gradient(to left, $fill-black, $gray-5);
+      background: $gradient-black;
       box-shadow: 10px 5px 20px 1px lighten( $bg-black, 40%);
     }
   }
