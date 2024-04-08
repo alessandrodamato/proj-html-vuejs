@@ -78,7 +78,43 @@ import { footer } from '../data/db';
 
     </div>
 
-    <div class="footer-bottom"></div>
+    <div class="footer-bottom position-relative">
+
+      <div class="ad_container container-fluid h-100">
+        
+        <div class="row h-100">
+
+          <div class="col h-100 d-flex align-items-center">
+
+           <p class="text-uppercase m-0 fs_08"><i class="fa-regular fa-copyright"></i> 2024 philox business theme.</p>
+
+          </div>
+
+          <div class="col-auto h-100 d-flex align-items-center">
+
+            <div class="socials">
+              <span v-for="(social, index) in footer.socials" :key="index" class="ms-3">
+                <a :href="social.href" v-html="social.icon"></a>
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="buttons-wrapper position-absolute d-flex align-items-center">
+
+        <button class="btn arrow d-flex justify-content-center align-items-center">
+          <a :href="footer.buttons.arrow.href" v-html="footer.buttons.arrow.icon"></a>
+        </button>
+
+        <button class="btn message ms-3" v-html="footer.buttons.message.icon"></button>
+
+      </div>
+
+    </div>
     
   </footer>
   
@@ -113,7 +149,33 @@ import { footer } from '../data/db';
 
     .footer-bottom{
       height: 110px;
-      background: $gradient-gray;
+      background: $gradient-black-2;
+      p, a{
+        color: $lg-5;
+      }
+      .buttons-wrapper{
+        top: 15px;
+        right: 40px;
+        .arrow{
+          width: 30px;
+          height: 30px;
+          font-size: .7rem;
+          border-radius: 50%;
+          background-color: $fill-white;
+          a{
+            color: $fill-black;
+          }
+        }
+        .message{
+          width: 60px;
+          aspect-ratio: 1 / 1;
+          transform: scaleX(-1);
+          font-size: 1.7rem;
+          border-radius: 50%;
+          color: $fill-white;
+          background-color: $bg-blue;
+        }
+      }
     }
 
   }

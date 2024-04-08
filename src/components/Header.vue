@@ -34,6 +34,7 @@ import Button from './partials/Button.vue'
             </div>
 
           </div>
+          
           <div class="col-auto h-100 d-flex align-items-center">
 
             <div class="socials">
@@ -137,9 +138,6 @@ import Button from './partials/Button.vue'
       }
       nav ul li a{
         color: $lg-6;
-        &:hover{
-          text-decoration: underline !important;
-        }
         &.active{
           color: $text-black-2;
         }

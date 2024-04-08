@@ -103,6 +103,31 @@ const footer = {
     address: 'Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051',
     email: 'info@yourdomain.com',
     number: '+99 (0) 101 0000 888'
+  },
+
+  socials: [
+    {
+      icon: '<i class="fa-brands fa-facebook-f"></i>',
+      href: 'https://www.facebook.com/'
+    },
+    {
+      icon: '<i class="fa-brands fa-twitter"></i>',
+      href: 'https://twitter.com/'
+    },
+    {
+      icon: '<i class="fa-brands fa-pinterest-p"></i>',
+      href: 'https://www.pinterest.it/'
+    },
+  ],
+
+  buttons: {
+    arrow: {
+      icon: '<i class="fa-solid fa-arrow-up"></i>',
+      href: '#'
+    },
+    message: {
+      icon: '<i class="fa-regular fa-comment"></i>'
+    }
   }
 }
 

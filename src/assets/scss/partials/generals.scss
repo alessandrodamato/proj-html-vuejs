@@ -12,5 +12,8 @@ ul{
   a{
     text-decoration: none;
     color: $fill-black;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

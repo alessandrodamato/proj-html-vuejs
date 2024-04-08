@@ -38,8 +38,11 @@ $border-3: $gray-1;
 // -- COLORS -- //
 
 // -- GRADIENTS -- //
+
 $gradient-gray: linear-gradient(to left, $gray-3, #3b3b3b);
 $gradient-black: linear-gradient(to left, $fill-black, $gray-5);
+$gradient-black-2: linear-gradient(to left, $bg-black, $lg-7);
 $gradient-green-toleft: linear-gradient(to left, $bg-green, #96e060);
 $gradient-green-toright: linear-gradient(to right, $bg-green, #96e060);
+
 // -- GRADIENTS -- //

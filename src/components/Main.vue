@@ -21,7 +21,7 @@
 @use '../assets/scss/partials/vars' as *;
 
   main{
-    min-height: 200px;
+    
   }
 
 </style>
