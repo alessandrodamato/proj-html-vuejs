@@ -149,7 +149,7 @@ import { footer } from '../data/db';
 
     .footer-bottom{
       height: 110px;
-      background: $gradient-black-2;
+      @include gradient(left, $bg-black, $lg-7);
       p, a{
         color: $lg-5;
       }

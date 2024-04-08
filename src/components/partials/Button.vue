@@ -27,15 +27,15 @@
     width: 160px;
     height: 50px;
     font-size: .9rem !important;
-    background: $gradient-green-toleft;
+    @include gradient(left, $bg-green, #96e060);
     box-shadow: 10px 5px 20px 1px lighten( $text-cyan, 30%);
     transition: all .3s;
     a{
       text-decoration: none !important;
       color: $fill-white !important;
     }
-    &:hover{
-      background: $gradient-black;
+    &:hover, &.dark{
+      @include gradient(left, $fill-black, $gray-5);
       box-shadow: 10px 5px 20px 1px lighten( $bg-black, 40%);
     }
   }

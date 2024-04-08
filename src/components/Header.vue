@@ -34,7 +34,7 @@ import Button from './partials/Button.vue'
             </div>
 
           </div>
-          
+
           <div class="col-auto h-100 d-flex align-items-center">
 
             <div class="socials">
@@ -101,8 +101,7 @@ import Button from './partials/Button.vue'
               <button
                 class="search-button btn text-uppercase text-green ms-4 p-2 pe-0"
                 v-html="header.buttons.search.icon"
-              >
-              </button>
+              />
               
             </div>
 
@@ -128,7 +127,7 @@ import Button from './partials/Button.vue'
 
     .header-top{
       height: 40px;
-      background: $gradient-gray;
+      @include gradient(left, $gray-3, #3b3b3b);
     }
 
     .header-bottom{
