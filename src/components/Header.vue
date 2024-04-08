@@ -1,6 +1,11 @@
 <script>
+import { header } from '../data/db';
   export default {
-    
+    data(){
+      return{
+        header
+      }
+    }
   }
 </script>
 
@@ -10,14 +15,29 @@
 
   <header>
 
-    <div class="header-top">
+    <div class="header-top text-white">
 
-      <div class="ad_container-sm container-fluid">
+      <div class="ad_container-sm container-fluid h-100">
         
-        <div class="row">
+        <div class="row h-100">
 
-          <div class="col">a</div>
-          <div class="col-auto">b</div>
+          <div class="col h-100 d-flex align-items-center">
+
+            <div class="numbers">
+              <span class="me-2"><i class="fa-solid fa-phone"></i></span>
+              <span v-for="(number, index) in header.numbers" :key="index" class="me-2">{{ number }}</span>
+            </div>
+
+          </div>
+          <div class="col-auto h-100 d-flex align-items-center">
+
+            <div class="socials">
+              <span v-for="(social, index) in header.socials" :key="index" class="ms-3">
+                <a :href="social.href" v-html="social.icon" class="text-white"></a>
+              </span>
+            </div>
+
+          </div>
 
         </div>
 
@@ -55,7 +75,6 @@
 
     .header-top{
       height: 40px;
-      color: $fill-white;
       background: linear-gradient(to left, $gray-3, #3b3b3b);
     }
 
