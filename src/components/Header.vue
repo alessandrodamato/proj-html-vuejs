@@ -135,7 +135,7 @@ import { header } from '../data/db';
           text-decoration: underline !important;
         }
         &.active{
-          font-weight: 600;
+          color: $text-black-2;
         }
       }
       .search-button{

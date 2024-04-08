@@ -9,7 +9,7 @@
 <template>
 
   <main>
-    m
+    
   </main>
   
 </template>
@@ -17,5 +17,9 @@
 
 
 <style lang="scss" scoped>
+
+  main{
+    min-height: 200px;
+  }
 
 </style>
