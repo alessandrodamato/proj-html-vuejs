@@ -19,12 +19,11 @@ const header = {
     },
   ],
 
-  logo: [
-    {
-      image: 'cropped-Group-39-2x.png',
-      href: '#'
-    },
-  ],
+  logo: {
+    name: 'Phlox | Business',
+    image: 'cropped-Group-39-2x.png',
+    href: '#'
+  },
 
   menu: [
     {
@@ -56,7 +55,7 @@ const header = {
 }
 
 const footer = {
-  
+
 }
 
 export { header, footer };

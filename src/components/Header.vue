@@ -47,13 +47,22 @@ import { header } from '../data/db';
 
     <div class="header-bottom">
 
-      <div class="ad_container-sm container-fluid">
+      <div class="ad_container-sm container-fluid h-100">
         
-        <div class="row row-cols-3">
+        <div class="row row-cols-3 h-100">
 
-          <div class="col">a</div>
-          <div class="col">b</div>
-          <div class="col">c</div>
+          <div class="col h-100 d-flex justify-content-start align-items-center">
+
+            <div class="logo debug">
+              <a :href="header.logo.href">
+                <img :src="`/public/img/${header.logo.image}`" :alt="header.logo.name" class="img-fluid">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="col h-100 d-flex justify-content-center align-items-center">b</div>
+          <div class="col h-100 d-flex justify-content-end align-items-center">c</div>
 
         </div>
 
@@ -80,6 +89,9 @@ import { header } from '../data/db';
 
     .header-bottom{
       height: 105px;
+      .logo{
+        width: 200px;
+      }
     }
 
   }
