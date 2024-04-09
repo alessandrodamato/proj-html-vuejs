@@ -34,7 +34,7 @@
 
   .card{
     &:hover{
-      @include gradient(right, $bg-green, #96e060);
+      @include gradient(top right, $bg-green, #96e060);
       box-shadow: 0 0 15px 1px $bg-green;
       scale: 1.1;
       .icon i, h3, p{

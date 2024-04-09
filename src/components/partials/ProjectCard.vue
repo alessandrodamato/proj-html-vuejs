@@ -36,7 +36,7 @@
       z-index: 1;
       scale: 1.1;
       .card-layer{
-        @include gradient(bottom, rgba($bg-green, .8), rgba(#96e060, .8));
+        @include gradient(bottom left, rgba($bg-green, .8), rgba(#96e060, .8));
         display: flex !important;
         flex-direction: column;
         justify-content: flex-end;

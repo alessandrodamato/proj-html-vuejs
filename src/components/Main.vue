@@ -313,7 +313,7 @@ import Plan from './partials/Plan.vue';
       left: 0;
      
       .architect-layer{
-        @include gradient(bottom, rgba($bg-green, .7), rgba(#96e060, .7));
+        @include gradient(bottom left, rgba($bg-green, .8), rgba(#96e060, .8));
       }
     }
     .woman-wrapper{
@@ -336,7 +336,7 @@ import Plan from './partials/Plan.vue';
         object-position: right
       }
       .stats-layer{
-        @include gradient(top, rgba($bg-green, .8), rgba(#96e060, .8));
+        @include gradient(top right, rgba($bg-green, .8), rgba(#96e060, .8));
         .number{
           font-size: 8rem;
         }

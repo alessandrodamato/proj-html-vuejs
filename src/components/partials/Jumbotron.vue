@@ -96,7 +96,7 @@ import Button from './Button.vue'
         text-align: center;
         line-height: 40px;
         &.active{
-          @include gradient(right, $bg-green, #96e060);
+          @include gradient(bottom right, $bg-green, #96e060);
           color: #a6edb8;
         }
       }
