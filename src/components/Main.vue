@@ -1,14 +1,14 @@
 <script>
 import { main } from '../data/db';
 import Jumbotron from './partials/Jumbotron.vue'
-import DobuleLine from './partials/DobuleLine.vue';
+import DoubleLine from './partials/DoubleLine.vue';
 import WhiteCard from './partials/WhiteCard.vue';
 import Button from './partials/Button.vue';
 import ProjectCard from './partials/ProjectCard.vue';
   export default {
     components:{
       Jumbotron,
-      DobuleLine,
+      DoubleLine,
       Button,
       WhiteCard,
       ProjectCard
@@ -40,7 +40,7 @@ import ProjectCard from './partials/ProjectCard.vue';
 
             <h2 class="text-capitalize mb-4 mt-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
 
-            <DobuleLine class="mb-5" />
+            <DoubleLine class="mb-5" />
 
             <Button content="view all" />
 
@@ -105,7 +105,7 @@ import ProjectCard from './partials/ProjectCard.vue';
 
             <h2 class="mb-2 mt-5">learn more about our <span>missions</span></h2>
 
-            <DobuleLine class="mb-3" />
+            <DoubleLine class="mb-3" />
 
             <p class="mb-5">
               Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.
@@ -130,11 +130,11 @@ import ProjectCard from './partials/ProjectCard.vue';
 
           <div class="col-6">
 
-            <DobuleLine class="mb-4" />
+            <DoubleLine class="mb-4" />
 
             <h2 class="mb-4">Our recent <span>web designs</span>  & some examples of past <span>projects</span></h2>
 
-            <DobuleLine />
+            <DoubleLine />
 
           </div>
 
@@ -168,6 +168,48 @@ import ProjectCard from './partials/ProjectCard.vue';
             <Button content="Read More" />
 
           </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="plans">
+
+      <div class="ad_container container-fluid">
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <div class="position-relative">
+
+              <div class="stats position-relative overflow-hidden rounded-3">
+
+                <img src="../assets/img/person-with-long-curly-hair-PZ99QM2-2x.jpg" alt="Stats" class="img-fluid w-100 h-100">
+
+                <div class="stats-layer position-absolute top-0 start-0 w-100 h-100"></div>
+
+              </div>
+
+              <div class="love rounded-3 position-absolute">
+
+                <h2 class="text-capitalize">we <span>love</span> what we do</h2>
+
+                <DoubleLine class="mb-4" />
+
+                <p>
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12"></div>
 
         </div>
 
@@ -213,8 +255,32 @@ import ProjectCard from './partials/ProjectCard.vue';
       }
   }
 
-  #projects{
-
+  #plans{
+    background-color: $lg-1;
+    padding: 210px 0 230px;
+    .stats, .love{
+      width: 880px;
+      height: 730px;
+    }
+    .stats{
+      img{
+        object-fit: cover;
+        object-position: right
+      }
+      .stats-layer{
+        @include gradient(top, rgba($bg-green, .7), rgba(#96e060, .7));
+      }
+    }
+    .love{
+      background-color: $fill-white;
+      box-shadow: 0 0 20px 5px $lg-3;
+      padding: 160px 100px;
+      top: 90px;
+      left: 750px;
+      h2{
+        padding-right: 200px;
+      }
+    }
   }
 
 </style>

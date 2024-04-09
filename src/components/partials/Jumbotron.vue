@@ -1,9 +1,9 @@
 <script>
-import DobuleLine from './DobuleLine.vue'
+import DoubleLine from './DoubleLine.vue'
 import Button from './Button.vue'
   export default {
     components:{
-      DobuleLine,
+      DoubleLine,
       Button
     } 
   }
@@ -25,7 +25,7 @@ import Button from './Button.vue'
 
             <h1 class="fw-bold mb-5">Focus on Your <span class="text-green">Business</span></h1>
 
-            <DobuleLine class="mb-5" />
+            <DoubleLine class="mb-5" />
 
             <p class="w-75 mb-95">
               Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.
