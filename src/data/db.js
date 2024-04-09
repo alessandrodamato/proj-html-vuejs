@@ -64,6 +64,51 @@ const header = {
 
 }
 
+const main = {
+  projectImages: [
+    {
+      name: 'Flowers',
+      category: 'Marketing',
+      path: 'ina-soulis-227104-unsplash-1024x1024.jpg'
+    },
+    {
+      name: 'A Famous Ferris Wheel',
+      category: 'Marketing',
+      path: 'sunisa-misa-531163-unsplash-1024x1024.jpg'
+    },
+    {
+      name: 'Shoes',
+      category: 'Marketing',
+      path: '355H-1024x1024.jpg'
+    },
+    {
+      name: 'Office',
+      category: 'Business Competition',
+      path: 'photo-1448932252197-d19750584e56-1024x1024.jpg'
+    },
+    {
+      name: 'Paper',
+      category: 'Business Competition',
+      path: 'business-competition-PB366D8-1024x1024.jpg'
+    },
+    {
+      name: 'Sofa',
+      category: 'Marketing',
+      path: 'cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg'
+    },
+    {
+      name: 'Balloons',
+      category: 'Business Competition',
+      path: 'aa9a4539-PQGJ7HU-1024x1024.jpg'
+    },
+    {
+      name: 'Fruit',
+      category: 'Marketing',
+      path: 'cody-davis-253928-unsplash-1024x1024.jpg'
+    },
+  ]
+}
+
 const footer = {
   logo: {
     name: 'Phlox | Business',
@@ -131,4 +176,4 @@ const footer = {
   }
 }
 
-export { header, footer };
+export { header, main, footer };
