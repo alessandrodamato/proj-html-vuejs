@@ -135,6 +135,9 @@ import DobuleLine from './partials/DobuleLine.vue';
       p, a{
         color: $lg-5;
       }
+      h4{
+        font-weight: bold;
+      }
     }
 
     .footer-bottom{

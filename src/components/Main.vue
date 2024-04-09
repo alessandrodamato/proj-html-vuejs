@@ -76,7 +76,7 @@ import Button from './partials/Button.vue'
 
           <div class="col-8 d-flex flex-wrap justify-content-end">
 
-            
+            <!-- //////////////////////////////////// images -->
 
           </div>
 
