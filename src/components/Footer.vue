@@ -42,7 +42,7 @@ import DobuleLine from './partials/DobuleLine.vue';
 
             <h4 class="mt-1 mb-3">QUICk LINKS</h4>
 
-            <DobuleLine />
+            <DobuleLine class="mb-4" />
 
             <ul class="text-center">
               <li v-for="(link, index) in footer.links" :key="index" class="mt-1">
@@ -56,7 +56,7 @@ import DobuleLine from './partials/DobuleLine.vue';
 
             <h4 class="mt-1 mb-3">CONTACT</h4>
 
-            <DobuleLine />
+            <DobuleLine class="mb-4" />
 
             <p class="pe-5">{{ footer.contact.address }}</p>
             <p>{{ footer.contact.email }}</p>
@@ -68,7 +68,7 @@ import DobuleLine from './partials/DobuleLine.vue';
 
             <h4 class="mt-1 mb-3">LOCATION ON MAP</h4>
 
-            <DobuleLine />
+            <DobuleLine class="mb-4" />
 
             <img src="/img/map.png" alt="Map" class="img-fluid">
 

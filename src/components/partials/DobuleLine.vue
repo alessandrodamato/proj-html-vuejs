@@ -9,8 +9,8 @@
 <template>
 
   <div>
-    <div class="line sm mb-4"></div>
-    <div class="line xl mb-4"></div>
+    <div class="line sm"></div>
+    <div class="line xl"></div>
   </div>
   
 </template>

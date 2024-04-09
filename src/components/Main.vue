@@ -31,7 +31,7 @@ import Button from './partials/Button.vue'
 
             <h2 class="text-capitalize mb-4 mt-5 pe-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
 
-            <DobuleLine class="mb-4" />
+            <DobuleLine class="mb-5" />
 
             <Button content="view all" />
 
@@ -82,11 +82,15 @@ import Button from './partials/Button.vue'
 
           <div class="col-4">
 
-            <h2 class="text-capitalize mb-4 mt-5 pe-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
+            <h2 class="mb-2 mt-5">learn more about our <span>missions</span></h2>
 
-            <DobuleLine class="mb-4" />
+            <DobuleLine class="mb-3" />
 
-            <Button content="view all" />
+            <p class="mb-5">
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.
+            </p>
+
+            <Button content="read more" />
 
           </div>
 
@@ -113,6 +117,9 @@ import Button from './partials/Button.vue'
 
   #missions{
     padding: 315px 0 290px;
+    h2{
+      padding-right: 100px;
+    }
   }
 
 </style>
