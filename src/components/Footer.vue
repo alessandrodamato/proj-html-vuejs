@@ -70,7 +70,7 @@ import DobuleLine from './partials/DobuleLine.vue';
 
             <DobuleLine />
 
-            <img src="/public/img/map.png" alt="Map" class="img-fluid">
+            <img src="/img/map.png" alt="Map" class="img-fluid">
 
           </div>
 

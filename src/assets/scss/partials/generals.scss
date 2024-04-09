@@ -8,12 +8,20 @@ ul{
   list-style: none;
   margin: 0 !important;
   padding: 0 !important;
-
   a{
     text-decoration: none;
     color: $fill-black;
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+section{
+  h2 span{
+    color: $text-green;
+  }
+  p{
+    color: $lg-6;
   }
 }

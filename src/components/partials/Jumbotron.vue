@@ -83,9 +83,6 @@ import Button from './Button.vue'
         -moz-text-fill-color: transparent;
       }
     }
-    p{
-      color: $lg-6;
-    }
     .slide-counter{
       @include gradient(left, $gray-4, $gray-6);
       width: 200px;

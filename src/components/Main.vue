@@ -1,8 +1,14 @@
 <script>
 import Jumbotron from './partials/Jumbotron.vue'
+import DobuleLine from './partials/DobuleLine.vue';
+import WhiteCard from './partials/WhiteCard.vue';
+import Button from './partials/Button.vue'
   export default {
     components:{
-      Jumbotron
+      Jumbotron,
+      DobuleLine,
+      Button,
+      WhiteCard
     }
   }
 </script>
@@ -15,6 +21,53 @@ import Jumbotron from './partials/Jumbotron.vue'
 
     <Jumbotron />
 
+    <section id="elegant">
+
+      <div class="ad_container container-fluid h-100">
+        
+        <div class="row h-100">
+
+          <div class="col-4 h-100">
+
+            <h2 class="text-capitalize mb-4">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
+
+            <DobuleLine class="mb-4" />
+
+            <Button content="view all" />
+
+          </div>
+
+          <div class="col-8 h-100 d-flex flex-wrap justify-content-end align-items-center">
+
+            <WhiteCard
+              iconClass="fa-solid fa-gauge-high"
+              title="Speed Optimization"
+              bio="Far far away, behind the word mountains, far from the countries Vokalia Separated..."
+            />
+            <WhiteCard
+              iconClass="fa-solid fa-cloud"
+              title="Cloud Solutions"
+              bio="Far far away, behind the word mountains, far from the countries Vokalia Separated..."
+            />
+            <WhiteCard
+              iconClass="fa-solid fa-mobile-screen-button"
+              title="Website Design"
+              bio="Far far away, behind the word mountains, far from the countries Vokalia Separated..."
+            />
+            <WhiteCard
+              iconClass="fa-solid fa-stopwatch"
+              title="Online Marketing"
+              bio="Far far away, behind the word mountains, far from the countries Vokalia Separated..."
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
   
 </template>
@@ -24,5 +77,10 @@ import Jumbotron from './partials/Jumbotron.vue'
 <style lang="scss" scoped>
 
 @use '../assets/scss/partials/vars' as *;
+
+  #elegant{
+    height: 1200px;
+    padding: 230px 0 260px;
+  }
 
 </style>
