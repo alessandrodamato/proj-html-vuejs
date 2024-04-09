@@ -94,8 +94,8 @@ import Button from './partials/Button.vue'
             <div class="buttons-wrapper d-flex">
 
               <Button
-              :link="header.buttons.purchase.href"
-              :content="header.buttons.purchase.content"
+                :link="header.buttons.purchase.href"
+                :content="header.buttons.purchase.content"
               />
 
               <button

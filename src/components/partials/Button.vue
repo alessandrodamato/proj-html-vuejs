@@ -35,7 +35,7 @@
       color: $fill-white !important;
     }
     &:hover, &.dark{
-      @include gradient(left, $fill-black, $gray-5);
+      @include gradient(left, $fill-black, $gray-6);
       box-shadow: 10px 5px 20px 1px lighten( $bg-black, 40%);
     }
   }
