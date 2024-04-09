@@ -5,13 +5,15 @@ import DoubleLine from './partials/DoubleLine.vue';
 import Button from './partials/Button.vue';
 import WhiteCard from './partials/WhiteCard.vue';
 import ProjectCard from './partials/ProjectCard.vue';
+import Plan from './partials/Plan.vue';
   export default {
     components:{
       Jumbotron,
       DoubleLine,
       Button,
       WhiteCard,
-      ProjectCard
+      ProjectCard,
+      Plan
     },
 
     data(){
@@ -238,7 +240,43 @@ import ProjectCard from './partials/ProjectCard.vue';
 
           </div>
 
-          <div class="col-12"></div>
+          <div class="col-12 d-flex">
+
+            <div class="text d-flex flex-column justify-content-center">
+
+              <h2 class="text-capitalize">with <span>live chat 24/7</span> support</h2>
+
+              <DoubleLine class="mb-4" />
+
+              <p class="mb-5">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.
+              </p>
+
+            </div>
+
+           <Plan
+              class="theme-dark"
+              title="designing"
+              subtitle="All designs"
+              price="13"
+              type="Design"
+            />
+            <Plan
+              class="theme-green" 
+              title="development"
+              subtitle="WordPress projects"
+              price="15"
+              type="Project"
+            />
+            <Plan 
+              class="theme-dark"
+              title="seo"
+              subtitle="Web products"
+              price="10"
+              type="Product"
+            />
+
+          </div>
 
         </div>
 
@@ -292,6 +330,7 @@ import ProjectCard from './partials/ProjectCard.vue';
       height: 730px;
     }
     .stats{
+      margin-bottom: 530px;
       img{
         object-fit: cover;
         object-position: right
