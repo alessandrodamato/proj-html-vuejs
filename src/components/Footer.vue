@@ -1,6 +1,11 @@
 <script>
 import { footer } from '../data/db';
+import DobuleLine from './partials/DobuleLine.vue';
   export default {
+    components:{
+      DobuleLine
+    },
+
     data(){
       return{
         footer
@@ -37,8 +42,7 @@ import { footer } from '../data/db';
 
             <h4 class="mt-1 mb-3">QUICk LINKS</h4>
 
-            <div class="ad_border sm mb-4"></div>
-            <div class="ad_border xl mb-4"></div>
+            <DobuleLine />
 
             <ul class="text-center">
               <li v-for="(link, index) in footer.links" :key="index" class="mt-1">
@@ -52,8 +56,7 @@ import { footer } from '../data/db';
 
             <h4 class="mt-1 mb-3">CONTACT</h4>
 
-            <div class="ad_border sm mb-4"></div>
-            <div class="ad_border xl mb-4"></div>
+            <DobuleLine />
 
             <p class="pe-5">{{ footer.contact.address }}</p>
             <p>{{ footer.contact.email }}</p>
@@ -65,8 +68,7 @@ import { footer } from '../data/db';
 
             <h4 class="mt-1 mb-3">LOCATION ON MAP</h4>
 
-            <div class="ad_border sm mb-4"></div>
-            <div class="ad_border xl mb-4"></div>
+            <DobuleLine />
 
             <img src="/public/img/map.png" alt="Map" class="img-fluid">
 
@@ -132,18 +134,6 @@ import { footer } from '../data/db';
       padding: 150px 0;
       p, a{
         color: $lg-5;
-      }
-      .ad_border{
-        display: inline-block;
-        border-radius: 3px;
-        border: 3px solid $text-green;
-        &.sm{
-          width: 10px;
-        }
-        &.xl{
-          margin-left: 5px;
-          width: 50px;
-        }
       }
     }
 
