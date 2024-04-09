@@ -29,7 +29,7 @@ import Button from './partials/Button.vue'
 
           <div class="col-4">
 
-            <h2 class="text-capitalize mb-4 mt-5 pe-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
+            <h2 class="text-capitalize mb-4 mt-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
 
             <DobuleLine class="mb-5" />
 
@@ -68,15 +68,25 @@ import Button from './partials/Button.vue'
 
     </section>
 
-    <section id="missions">
+    <section id="missions" class="position-relative">
 
       <div class="ad_container container-fluid">
         
         <div class="row">
 
-          <div class="col-8 d-flex flex-wrap justify-content-end">
+          <div class="col-8">
 
-            <!-- //////////////////////////////////// images -->
+            <div class="architect-wrapper">
+              <div class="architect position-relative overflow-hidden rounded-end-5">
+                <img src="../assets/img/busy-architect-PYVKWM4-1024x872.jpg" alt="Busy Architect" class="img-fluid">
+                <div class="architect-layer position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+            </div>
+
+            <div class="woman-wrapper position-absolute z-1 overflow-hidden rounded-5">
+              <img src="../assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="Business Woman" class="img-fluid">
+            </div>
+
 
           </div>
 
@@ -116,10 +126,27 @@ import Button from './partials/Button.vue'
   }
 
   #missions{
+    background-color: $lg-1;
     padding: 315px 0 290px;
     h2{
       padding-right: 100px;
     }
+    img{
+      width: 790px;
+    }
+    .architect-wrapper{
+      position: absolute;
+      top: 210px;
+      left: 0;
+     
+      .architect-layer{
+        @include gradient(bottom, rgba($bg-green, .7), rgba(#96e060, .7));
+      }
+    }
+    .woman-wrapper{
+        top: 310px;
+        left: 130px;
+      }
   }
 
 </style>

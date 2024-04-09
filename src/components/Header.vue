@@ -138,7 +138,7 @@ import Button from './partials/Button.vue'
       nav ul li a{
         color: $lg-6;
         &.active{
-          color: $text-black-2;
+          font-weight: bold;
         }
       }
       .search-button{
