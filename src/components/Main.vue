@@ -284,6 +284,20 @@ import Plan from './partials/Plan.vue';
 
     </section>
 
+    <section id="quote">
+
+      <div class="wrapper w-100 h-100 text-center">
+
+        <h2><span>&#x275B;&#x275B;</span></h2>
+
+        <p class="mb-90">When it comes to barbequing, there are two main schools of thought for the tachniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</p>
+
+        <!-- //////////////////////////////////////////////////////////////// photo name client -->
+
+      </div>
+
+    </section>
+
   </main>
   
 </template>
@@ -362,6 +376,28 @@ import Plan from './partials/Plan.vue';
         vertical-align: middle;
         font-weight: 900;
         color: $text-green;
+      }
+    }
+  }
+
+  #quote{
+    height: 825px;
+    background-image: url('../assets/img/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .wrapper{
+      @include gradient (right, rgba($bg-black, .9), rgba($gray-4, .9));
+      padding: 180px 0 150px;
+      p{
+        padding: 0 470px;
+        line-height: 40px;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: $lg-2;
+      }
+      h2{
+        font-size: 7rem !important;
       }
     }
   }
