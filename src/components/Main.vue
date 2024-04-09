@@ -2,8 +2,8 @@
 import { main } from '../data/db';
 import Jumbotron from './partials/Jumbotron.vue'
 import DoubleLine from './partials/DoubleLine.vue';
-import WhiteCard from './partials/WhiteCard.vue';
 import Button from './partials/Button.vue';
+import WhiteCard from './partials/WhiteCard.vue';
 import ProjectCard from './partials/ProjectCard.vue';
   export default {
     components:{
@@ -189,7 +189,30 @@ import ProjectCard from './partials/ProjectCard.vue';
 
                 <img src="../assets/img/person-with-long-curly-hair-PZ99QM2-2x.jpg" alt="Stats" class="img-fluid w-100 h-100">
 
-                <div class="stats-layer position-absolute top-0 start-0 w-100 h-100"></div>
+                <div class="stats-layer position-absolute top-0 start-0 w-100 h-100 text-white d-flex flex-column justify-content-center align-items-center ">
+
+                  <div>
+
+                    <div class="number">280</div>
+                    <h6 class="text-uppercase fs-4 mb-5 text-center">projects</h6>
+                    
+                  </div>
+
+                  <div class="d-flex">
+
+                    <div class="text-center px-5 border-end">
+                      <h4 class="fs-1">+3,500</h4>
+                      <h6 class="text-uppercase fs-4">users' comments</h6>
+                    </div>
+
+                    <div class="text-center px-5">
+                      <h4 class="fs-1">100%</h4>
+                      <h6 class="text-uppercase fs-4">happy clients</h6>
+                    </div>
+
+                  </div>
+
+                </div>
 
               </div>
 
@@ -199,9 +222,15 @@ import ProjectCard from './partials/ProjectCard.vue';
 
                 <DoubleLine class="mb-4" />
 
-                <p>
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                <p class="mb-5">
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, a large language ocean, far from the countries Vokalia and Consonantia.
                 </p>
+
+                <ul>
+                  <li>Far far away, behind the word mountains</li>
+                  <li>Large language ocean</li>
+                  <li>Far from the countries Vokalia and Consonantia</li>
+                </ul>
 
               </div>
 
@@ -268,7 +297,13 @@ import ProjectCard from './partials/ProjectCard.vue';
         object-position: right
       }
       .stats-layer{
-        @include gradient(top, rgba($bg-green, .7), rgba(#96e060, .7));
+        @include gradient(top, rgba($bg-green, .8), rgba(#96e060, .8));
+        .number{
+          font-size: 8rem;
+        }
+        h6{
+          color: #dff7e3;
+        }
       }
     }
     .love{
@@ -279,6 +314,15 @@ import ProjectCard from './partials/ProjectCard.vue';
       left: 750px;
       h2{
         padding-right: 200px;
+      }
+      li::before{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f00c';
+        display: inline-block;
+        padding-right: 5px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: $text-green;
       }
     }
   }
