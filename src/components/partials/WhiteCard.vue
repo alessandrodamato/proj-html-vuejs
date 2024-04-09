@@ -33,6 +33,14 @@
 @use '../../assets/scss/partials/vars' as *;
 
   .card{
+    &:hover{
+      @include gradient(right, $bg-green, #96e060);
+      box-shadow: 0 0 15px 1px $bg-green;
+      scale: 1.1;
+      .icon i, h3, p{
+        color: $fill-white;
+      }
+    }
     width: 450px;
     height: 320px;
     padding: 60px 40px;

@@ -23,13 +23,13 @@ import Button from './partials/Button.vue'
 
     <section id="elegant">
 
-      <div class="ad_container container-fluid h-100">
+      <div class="ad_container container-fluid">
         
-        <div class="row h-100">
+        <div class="row">
 
-          <div class="col-4 h-100">
+          <div class="col-4">
 
-            <h2 class="text-capitalize mb-4">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
+            <h2 class="text-capitalize mb-4 mt-5 pe-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
 
             <DobuleLine class="mb-4" />
 
@@ -37,7 +37,7 @@ import Button from './partials/Button.vue'
 
           </div>
 
-          <div class="col-8 h-100 d-flex flex-wrap justify-content-end align-items-center">
+          <div class="col-8 d-flex flex-wrap justify-content-end">
 
             <WhiteCard
               iconClass="fa-solid fa-gauge-high"
@@ -68,6 +68,35 @@ import Button from './partials/Button.vue'
 
     </section>
 
+    <section id="missions">
+
+      <div class="ad_container container-fluid">
+        
+        <div class="row">
+
+          <div class="col-8 d-flex flex-wrap justify-content-end">
+
+            
+
+          </div>
+
+          <div class="col-4">
+
+            <h2 class="text-capitalize mb-4 mt-5 pe-5">we are here to make your <span>website</span> look more <span>elegant</span> and stylish!</h2>
+
+            <DobuleLine class="mb-4" />
+
+            <Button content="view all" />
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
   
 </template>
@@ -79,8 +108,11 @@ import Button from './partials/Button.vue'
 @use '../assets/scss/partials/vars' as *;
 
   #elegant{
-    height: 1200px;
-    padding: 230px 0 260px;
+    padding: 230px 0;
+  }
+
+  #missions{
+    padding: 315px 0 290px;
   }
 
 </style>
