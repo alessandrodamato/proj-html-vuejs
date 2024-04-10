@@ -292,7 +292,13 @@ import Plan from './partials/Plan.vue';
 
         <p class="mb-90">When it comes to barbequing, there are two main schools of thought for the tachniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</p>
 
-        <!-- //////////////////////////////////////////////////////////////// photo name client -->
+        <div class="image mb-4 m-auto overflow-hidden">
+          <img src="../assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="Lissa Durbin" class="w-100 h-100 object-fit-cover img-fluid ">
+        </div>
+
+        <h4 class="text-uppercase text-green">lissa durbin</h4>
+
+        <h6>Client</h6>
 
       </div>
 
@@ -399,6 +405,16 @@ import Plan from './partials/Plan.vue';
       h2{
         font-size: 7rem !important;
       }
+      h6{
+        color: $lg-2;
+        font-size: 1.1rem;
+      }
+    }
+    .image{
+      width: 100px;
+      aspect-ratio: 1 / 1;
+      border: 4px solid $fill-white;
+      border-radius: 50%;
     }
   }
 
