@@ -5,7 +5,8 @@ import DoubleLine from './partials/DoubleLine.vue';
 import Button from './partials/Button.vue';
 import WhiteCard from './partials/WhiteCard.vue';
 import ProjectCard from './partials/ProjectCard.vue';
-import Plan from './partials/Plan.vue';
+import PlanCard from './partials/PlanCard.vue';
+import BlogCard from './partials/BlogCard.vue';
   export default {
     components:{
       Jumbotron,
@@ -13,7 +14,8 @@ import Plan from './partials/Plan.vue';
       Button,
       WhiteCard,
       ProjectCard,
-      Plan
+      PlanCard,
+      BlogCard
     },
 
     data(){
@@ -254,21 +256,21 @@ import Plan from './partials/Plan.vue';
 
             </div>
 
-           <Plan
+           <PlanCard
               class="theme-dark"
               title="designing"
               subtitle="All designs"
               price="13"
               type="Design"
             />
-            <Plan
+            <PlanCard
               class="theme-green" 
               title="development"
               subtitle="WordPress projects"
               price="15"
               type="Project"
             />
-            <Plan 
+            <PlanCard 
               class="theme-dark"
               title="seo"
               subtitle="Web products"
@@ -290,7 +292,7 @@ import Plan from './partials/Plan.vue';
 
         <h2><span>&#x275B;&#x275B;</span></h2>
 
-        <p class="mb-90">When it comes to barbequing, there are two main schools of thought for the tachniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</p>
+        <p class="mb-90">When it comes to barbequing, there are two main schools of thought for the tachniques that you can use. Freshly scrambled eggs with applewood smoked bacon - are amazing!</p>
 
         <div class="image mb-4 m-auto overflow-hidden">
           <img src="../assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="Lissa Durbin" class="w-100 h-100 object-fit-cover img-fluid ">
@@ -299,6 +301,50 @@ import Plan from './partials/Plan.vue';
         <h4 class="text-uppercase text-green">lissa durbin</h4>
 
         <h6>Client</h6>
+
+      </div>
+
+    </section>
+
+    <section id="blog">
+
+      <div class="ad_container container-fluid ">
+
+        <div class="row">
+
+          <div class="col-12 text-center">
+            <h2 class="text-capitalize mb-4">latest news & our <span>blog</span></h2>
+            <DoubleLine class="mb-3" />
+          </div>
+          
+          <div class="col-4 d-flex justify-content-center">
+            <BlogCard
+              path="serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg"
+              date="May 24, 2024"
+              author="Alex"
+              title="Marketing Ideas"
+            />
+          </div>
+
+          <div class="col-4 d-flex justify-content-center">
+            <BlogCard
+              path="Businessman-at-the-desk-in-his-office-resting--1024x768.jpg"
+              date="May 24, 2024"
+              author="Alex"
+              title="Rest During Working Hours"
+            />
+          </div>
+
+          <div class="col-4 d-flex justify-content-center">
+            <BlogCard
+              path="simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg"
+              date="May 24, 2024"
+              author="Alex"
+              title="Develop Your Startup Idea"
+            />
+          </div>
+          
+        </div>
 
       </div>
 
@@ -396,7 +442,7 @@ import Plan from './partials/Plan.vue';
       @include gradient (right, rgba($bg-black, .9), rgba($gray-4, .9));
       padding: 180px 0 150px;
       p{
-        padding: 0 470px;
+        padding: 0 480px;
         line-height: 40px;
         font-style: italic;
         font-size: 1.5rem;
@@ -416,6 +462,10 @@ import Plan from './partials/Plan.vue';
       border: 4px solid $fill-white;
       border-radius: 50%;
     }
+  }
+
+  #blog{
+    padding: 250px 0 0;
   }
 
 </style>
