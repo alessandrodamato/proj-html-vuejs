@@ -349,7 +349,42 @@ import BlogCard from './partials/BlogCard.vue';
 
           <div class="col-12 text-center">
 
-            <Button class="dark" content="view all post" link="#" />
+            <Button class="big dark" content="view all post" link="#" />
+            
+          </div>
+
+          <div class="col-6 d-flex justify-content-end position-relative">
+
+            <div class="padding"></div>
+
+            <div class="big-card theme-dark rounded-4">
+
+              <div class="question">Are You Ready?</div>
+
+              <h3>Start a New Project</h3>
+
+              <div class="input-bar rounded-5 mx-auto d-flex justify-content-between align-items-center overflow-hidden">
+                <input class="w-100 h-100 px-5 bg-transparent border-0" type="email" placeholder="Enter Your Email Address">
+                <button class="h-100 pe-5 text-uppercase bg-transparent border-0">Submit</button>
+              </div>
+
+            </div>
+            
+          </div>
+
+          <div class="col-6 d-flex justify-content-start position-relative">
+
+            <div class="padding"></div>
+
+            <div class="big-card theme-green rounded-4">
+
+              <div class="question">What Are You Waiting for?</div>
+
+              <h3>Let's Talk About Work</h3>
+
+              <Button class="dark shadow-none" content="start now" link="#" />
+              
+            </div>
             
           </div>
           
@@ -358,6 +393,8 @@ import BlogCard from './partials/BlogCard.vue';
       </div>
 
     </section>
+
+    <section id="sponsors"></section>
 
   </main>
   
@@ -475,6 +512,66 @@ import BlogCard from './partials/BlogCard.vue';
 
   #blog{
     padding: 250px 0 0;
+    .padding{
+      min-height: 460px;
+    }
+    .big-card{
+      width: 780px;
+      height: 340px;
+      padding: 70px 0;
+      text-align: center;
+      position: absolute;
+      top: 100%;
+      transform: translateY(-50%);
+      .question{
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      h3{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $fill-white;
+        margin-bottom: 70px
+      }
+      .input-bar{
+        width: 480px;
+        height: 65px;
+        background-color: rgba($gray-6, .7);
+        input{
+          color: $lg-4;
+          &:focus{
+            outline: none;
+          }
+          &::placeholder{
+            color: $lg-4;
+          }
+        }
+        button{
+          width: 100px;
+          font-weight: bold;
+          color: $lg-4;
+          &:hover{
+            opacity: .7;
+          }
+        }
+      }
+      &.theme-green{
+        @include gradient(right, $bg-green, #96e060);
+        .question{
+          color: #c9f5d5;
+        }
+      }
+      &.theme-dark{
+        @include gradient(top left, $fill-black, $gray-6);
+        color: $lg-5;
+      }
+    }
+  }
+
+  #sponsors{
+    height: 460px;
+    background-color: $lg-1;
   }
 
 </style>
