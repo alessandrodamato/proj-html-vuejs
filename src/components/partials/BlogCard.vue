@@ -13,7 +13,7 @@
 
 <template>
 
-  <div class="box position-relative border-0 rounded-3">
+  <div class="box position-relative border-0 rounded-3 mb-125">
     <img :src="`/src/assets/img/${path}`" :alt="title" class="w-100 h-100 object-fit-cover rounded-3">
     <div class="bio position-absolute z-1 rounded-3 d-flex flex-column justify-content-end">
       <span class="fs_09">{{ date }} &#x2022; by {{ author }}</span>

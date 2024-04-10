@@ -34,6 +34,10 @@
   margin-bottom: 95px;
 }
 
+.mb-125{
+  margin-bottom: 125px;
+}
+
 .mb-130{
   margin-bottom: 130px;
 }
@@ -41,8 +45,13 @@
 .vertical{
   position: absolute;
   top: 50%;
-  right: -250px;
   rotate: -90deg;
   font-size: .9rem;
   font-weight: bold;
+  &.left{
+    left: -250px;
+  }
+  &.right{
+    right: -250px;
+  }
 }

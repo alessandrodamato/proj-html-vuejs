@@ -46,7 +46,7 @@ import BlogCard from './partials/BlogCard.vue';
 
             <DoubleLine class="mb-5" />
 
-            <Button content="view all" />
+            <Button content="view all" link="#" />
 
           </div>
 
@@ -73,7 +73,7 @@ import BlogCard from './partials/BlogCard.vue';
               bio="Far far away, behind the word mountains, far from the countries Vokalia Separated..."
             />
 
-            <div class="vertical">17 years of experience helping people for best solutions</div>
+            <div class="vertical right">17 years of experience helping people for best solutions</div>
 
           </div>
 
@@ -115,7 +115,7 @@ import BlogCard from './partials/BlogCard.vue';
               Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.
             </p>
 
-            <Button content="read more" />
+            <Button content="read more" link="#" />
 
           </div>
 
@@ -161,7 +161,7 @@ import BlogCard from './partials/BlogCard.vue';
                 :path="card.path"
               />
 
-              <div class="vertical">17 years of experience helping people for best solutions</div>
+              <div class="vertical right">17 years of experience helping people for best solutions</div>
 
             </div>
 
@@ -169,7 +169,7 @@ import BlogCard from './partials/BlogCard.vue';
 
           <div class="col-12 text-center">
 
-            <Button content="Read More" />
+            <Button content="Read More" link="#" />
 
           </div>
 
@@ -314,10 +314,13 @@ import BlogCard from './partials/BlogCard.vue';
 
           <div class="col-12 text-center">
             <h2 class="text-capitalize mb-4">latest news & our <span>blog</span></h2>
-            <DoubleLine class="mb-3" />
+            <DoubleLine class="mb-5" />
           </div>
           
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-4 d-flex justify-content-center position-relative">
+
+            <div class="vertical left">17 years of experience helping people for best solutions</div>
+
             <BlogCard
               path="serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg"
               date="May 24, 2024"
@@ -342,6 +345,12 @@ import BlogCard from './partials/BlogCard.vue';
               author="Alex"
               title="Develop Your Startup Idea"
             />
+          </div>
+
+          <div class="col-12 text-center">
+
+            <Button class="dark" content="view all post" link="#" />
+            
           </div>
           
         </div>
