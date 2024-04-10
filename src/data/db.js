@@ -106,6 +106,15 @@ const main = {
       category: 'Marketing',
       path: 'cody-davis-253928-unsplash-1024x1024.jpg'
     },
+  ],
+
+  sponsors: [
+    'client-1-2x.png',
+    'client-9-2x.png',
+    'client-7-2x.png',
+    'client-3-2x.png',
+    'client-4-2x.png',
+    'client-5-2x.png',
   ]
 }
 

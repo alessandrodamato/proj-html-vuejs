@@ -20,7 +20,7 @@
 
     <h3 class="mb-3">{{ title }}</h3>
 
-    <p class="pe-5">{{ bio }}</p>
+    <p class="pe-4">{{ bio }}</p>
 
   </div>
 

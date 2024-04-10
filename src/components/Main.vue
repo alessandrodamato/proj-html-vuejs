@@ -1,5 +1,6 @@
 <script>
 import { main } from '../data/db';
+import { store } from '../data/store';
 import Jumbotron from './partials/Jumbotron.vue'
 import DoubleLine from './partials/DoubleLine.vue';
 import Button from './partials/Button.vue';
@@ -20,7 +21,8 @@ import BlogCard from './partials/BlogCard.vue';
 
     data(){
       return{
-        main
+        main,
+        store
       }
     }
   }
@@ -51,6 +53,8 @@ import BlogCard from './partials/BlogCard.vue';
           </div>
 
           <div class="col-8 d-flex flex-wrap justify-content-end position-relative">
+
+            <!-- alcuni font awesome sono differenti perché sono disponibili solo con versione pro -->
 
             <WhiteCard
               iconClass="fa-solid fa-gauge-high"
@@ -364,8 +368,8 @@ import BlogCard from './partials/BlogCard.vue';
               <h3>Start a New Project</h3>
 
               <div class="input-bar rounded-5 mx-auto d-flex justify-content-between align-items-center overflow-hidden">
-                <input class="w-100 h-100 px-5 bg-transparent border-0" type="email" placeholder="Enter Your Email Address">
-                <button class="h-100 pe-5 text-uppercase bg-transparent border-0">Submit</button>
+                <input class="w-100 h-100 px-5 bg-transparent border-0" type="email" placeholder="Enter Your Email Address" v-model="store.emailToSend" @keyup.enter="store.emailToSend = ''">
+                <button class="h-100 pe-5 text-uppercase bg-transparent border-0" @click="store.emailToSend = ''" >Submit</button>
               </div>
 
             </div>
@@ -394,7 +398,27 @@ import BlogCard from './partials/BlogCard.vue';
 
     </section>
 
-    <section id="sponsors"></section>
+    <section id="sponsors">
+
+      <div class="ad_container container-fluid">
+
+        <div class="row">
+
+          <div class="col">
+            
+            <div class="content d-flex justify-content-around align-items-center w-100">
+
+              <img v-for="(sponsor, index) in main.sponsors" :key="index" :src="`/img/${sponsor}`" alt="Sponsor">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
   
@@ -459,7 +483,7 @@ import BlogCard from './partials/BlogCard.vue';
     }
     .love{
       background-color: $fill-white;
-      box-shadow: 0 0 20px 5px $lg-3;
+      box-shadow: 10px 0 20px 5px $lg-3;
       padding: 160px 100px;
       top: 90px;
       left: 750px;
@@ -570,7 +594,7 @@ import BlogCard from './partials/BlogCard.vue';
   }
 
   #sponsors{
-    height: 460px;
+    padding: 270px 0 125px;
     background-color: $lg-1;
   }
 

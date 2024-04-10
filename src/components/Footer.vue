@@ -34,7 +34,7 @@ import DoubleLine from './partials/DoubleLine.vue';
               </a>
             </div>
 
-            <p class="pe-3">{{ footer.logo.bio }}</p>
+            <p>{{ footer.logo.bio }}</p>
             
           </div>
 
@@ -133,7 +133,7 @@ import DoubleLine from './partials/DoubleLine.vue';
     .footer-top{
       padding: 150px 0;
       p, a{
-        color: $lg-5;
+        color: $lg-7;
       }
       h4{
         font-weight: bold;
@@ -144,7 +144,7 @@ import DoubleLine from './partials/DoubleLine.vue';
       height: 110px;
       @include gradient(left, $bg-black, $lg-7);
       p, a{
-        color: $lg-5;
+        color: $lg-4;
       }
       .buttons-wrapper{
         top: 15px;

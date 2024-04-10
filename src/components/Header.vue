@@ -136,7 +136,7 @@ import Button from './partials/Button.vue'
         width: 200px;
       }
       nav ul li a{
-        color: $lg-6;
+        color: $lg-8;
         &.active{
           font-weight: bold;
         }
