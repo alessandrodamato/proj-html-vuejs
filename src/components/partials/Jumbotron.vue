@@ -34,6 +34,7 @@ import Button from './Button.vue'
             <Button
               class="dark mb-95"
               content="Read More"
+              link="#"
             />
 
             <div class="d-flex justify-content-between align-items-end ">
