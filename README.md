@@ -1,11 +1,9 @@
 Business Landing
 ===
-**Progetto HTML/VueJS** 
+**Progetto HTML/VueJS**  
+Progetto di metà corso, riproduzione di una landing page in VueJS.  
 
-**Repo**  
-proj-html-vuejs
-
-**Cosa fare**  
+**Consegna**  
 Riprodurre il layout proposto solo in versione Desktop 
 
 **Tecnologie da utilizzare**  
